@@ -6,20 +6,9 @@ Embed recommends using the [react-native-payments](https://www.npmjs.com/package
 
 **NOTE**: Because both the Apple Pay and Google Pay tokens returned to your application are encrypted and one time use, transmitting and storing them **DOES NOT** fall in scope of PCI-DSS.
 
-## What This Demo Shows
-- **Native Wallet Integration**: Apple Pay and Google Pay with single codebase
-- **Customer Authentication**: Handles 3DS challenge redirects
-- **Cross-Platform**: Works on both iOS and Android with minimal platform-specific code
-
 ## Repo description
 
-Key logic can be found in `App.tsx`
-
-It shows two different ways of integrating payments, using previously tokenized cards, and directly invoking the native mobile wallets. 
-
-The example using tokenized cards shows opening of a redirect url in the case where shopper authentication is required.
-
-The example for using native wallets can be found in `App.tsx` function `handleWalletPayment`. It is already cross platform supporting both Apple Pay and Google Pay (called AndroidPay by the `react-native-payments` library). For simplicity the demo app directly calls Embed APIs.
+Key logic can be found in `App.tsx`, specifically in the function `handleWalletPayment`. It is already cross platform supporting both Apple Pay and Google Pay (called AndroidPay by the `react-native-payments` library). For simplicity the demo app directly calls Embed APIs.
 
 ## Apple Pay Specific Setup
 

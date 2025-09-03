@@ -8,6 +8,3 @@ export interface PaymentResult {
     url?: string;
   };
 }
-
-// Payment method type for the shared handler
-export type PaymentMethodType = 'wallet' | 'card';
